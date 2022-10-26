@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+    @apply font-medium
+}
+.card1{
+    @apply text-sky-500 dark:text-sky-400
+}
+.card2{
+    @apply text-slate-700 dark:text-slate-500
+}
