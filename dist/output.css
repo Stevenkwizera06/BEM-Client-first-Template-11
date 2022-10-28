@@ -416,6 +416,46 @@ video {
   display: none;
 }
 
+h1 {
+  font-size: 56px;
+  font-weight: 800;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 800;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 800;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0.87;
+}
+
+p {
+  font-size: 16px;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -557,30 +597,630 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.card {
+.grow {
+  flex-grow: 1;
+}
+
+.bg-blue-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+/* body{
+    @apply bg-gradient-image
+ }   */
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.navigation__menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navigation__list {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navigation__list-item {
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+}
+
+.navigation__button, .herosection__button, .impressions__button, .grow-business__button, .product-herosection__btn, .sales__btn {
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 33 48 / var(--tw-bg-opacity));
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.product-herosection__btn--contact {
+  border-radius: 0.375rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(29 33 48 / var(--tw-border-opacity));
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.herosection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-image: url('/src/images/BlurGradient.png');
+  padding-left: 11rem;
+  padding-right: 11rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.herosection__title {
+  width: 83.333333%;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+}
+
+.herosection__slogan {
+  width: 80%;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+  opacity: 0.87;
+}
+
+.herosection__freetrials {
+  position: relative;
+  width: 50%;
+}
+
+.herosection__input {
+  width: 100%;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.herosection__button {
+  position: absolute;
+  right: 0px;
+}
+
+.services, .features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.services__title {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.services__slogan {
+  width: 50%;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+}
+
+.services__wrapper {
+  display: flex;
+  gap: 1.5rem;
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 228 252 / var(--tw-bg-opacity));
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.services__type-icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+.services__type {
+  display: flex;
+  flex-basis: 24rem;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.services__description {
+  opacity: 0.87;
+}
+
+.work-with-us, .discover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.work-with-us__description, .discover__description {
+  flex-basis: 50%;
+}
+
+.work-with-us__list, .discover__list {
+  flex-basis: 40%;
+}
+
+.work-with-us__list > :not([hidden]) ~ :not([hidden]), .discover__list > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.work-with-us__card, .discover__card {
+  display: flex;
+  flex-basis: 24rem;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.work-with-us__icon {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 172 172 / var(--tw-bg-opacity));
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.discover__icon {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 245 247 / var(--tw-bg-opacity));
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.work-with-us__img {
+  width: 1.5rem;
+}
+
+.impressions {
+  background-image: url('/src/images/Blur-Gradient2.png');
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.impressions, .marketing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.impressions__description, .marketing__description {
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.impressions__image, .marketing__image {
+  width: 40%;
+}
+
+.impressions__button {
+  width: 9rem;
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.partners__logos {
+  display: flex;
+  width: 92%;
+  justify-content: space-between;
+}
+
+.partners__company {
+  width: 12vw;
+}
+
+.features {
+  border-right-width: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.features__wrapper {
+  background-color: rgb(215 154 228 / var(--tw-bg-opacity));
+  display: flex;
+  gap: 1.5rem;
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 228 252 / var(--tw-bg-opacity));
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.testimonials {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.testimonials__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.testimonials__testimony {
+  display: flex;
+  flex-basis: 24rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: #6199ED42;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.testimonials__profile {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-herosection {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.product-herosection__description {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: 800;
+}
+
+.product-herosection__buttons {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.product-herosection__image-container {
+  width: 50%;
+}
+
+.product-herosection__img {
+  width: 100%;
+}
+
+.product-services__wrapper {
+  margin-top: 2.5rem;
+  display: flex;
+  width: 91.666667%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 2.5rem;
+}
+
+.product-services__service {
+  flex-basis: 20rem;
+}
+
+.product-services__type-icon {
+  width: 2.5rem;
+}
+
+.marketing {
+  margin-top: 2.5rem;
+}
+
+.marketing--reversed {
+  flex-direction: row-reverse;
+}
+
+.marketing__description-paragraph {
+  width: 83.333333%;
+}
+
+.grow-business {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.grow-business__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.grow-business__heading {
+  width: 60%;
+  text-align: center;
+  font-weight: 800;
+}
+
+.product-service__heading-div {
+  display: flex;
+  justify-content: center;
+}
+
+.product-service__heading {
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 33 48 / var(--tw-bg-opacity));
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.footer__uppersection {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.footer__heading {
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.footer__paragraph {
   font-weight: 500;
-}
-
-.card1 {
   --tw-text-opacity: 1;
-  color: rgb(14 165 233 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  opacity: 0.6;
 }
 
-@media (prefers-color-scheme: dark) {
-  .card1 {
-    --tw-text-opacity: 1;
-    color: rgb(56 189 248 / var(--tw-text-opacity));
-  }
+.footer__usefullinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.card2 {
+.footer__logo {
+  width: 9rem;
+}
+
+.footer__subscribe {
+  display: flex;
+  width: 25%;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer__subscribe-text {
+  font-weight: 600;
   --tw-text-opacity: 1;
-  color: rgb(51 65 85 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (prefers-color-scheme: dark) {
-  .card2 {
-    --tw-text-opacity: 1;
-    color: rgb(100 116 139 / var(--tw-text-opacity));
-  }
+.footer__subscribe-form {
+  position: relative;
+  width: 100%;
 }
+
+.footer__input {
+  width: 100%;
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 46 60 / var(--tw-bg-opacity));
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.footer__button {
+  position: absolute;
+  right: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+}
+
+.footer__lower-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__social-icons {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.footer__social-icon {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  opacity: 0.5;
+}
+
+.sales {
+  margin-left: 10rem;
+  background-image: url('/src/images/product_Gradient.png');
+}
+
+.sales__contents {
+  margin-top: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.sales__description {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sales__description > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.sales__description {
+  padding-top: 5rem;
+}
+
+.sales__btn--hover {
+  margin-left: 2.5rem;
+  border-radius: 1rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(14 165 233 / var(--tw-border-opacity));
+  --tw-border-opacity: 1;
+  border-right-color: rgb(96 165 250 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.sales__image {
+  width: 50%;
+}
+
+.services-layout {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./images/Blur-Gradient-product.png");
+}
+
+.service-layout__title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 61px;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+}
+
+.service-layout__cards {
+  display: flex;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  border-top-right-radius: 3rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  opacity: 0.8;
+}
+
+.service-layout__item {
+  max-width: 300px;
+}
+
+.service-layout__cards-contents {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+}
+
+.service-layout__paragraph {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 300;
+  --tw-text-opacity: 1;
+  color: rgb(29 33 48 / var(--tw-text-opacity));
+}
+
+
