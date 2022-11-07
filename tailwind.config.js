@@ -6,7 +6,9 @@ module.exports = {
       backgroundImage:{
         'gradient-image':"url('/src/images/BlurGradient.png')",
         'gradient-impressions':"url('/src/images/Blur-Gradient2.png')",
-        'gradient-product':"url('/src/images/product_Gradient.png')"
+        'gradient-product':"url('/src/images/product_Gradient.png')",
+        'platinum-background':"url('/src/images/platinum-background.png')",
+        'faq-background':"url('src/images/faq-background.png')"
       },
       colors:{
         "dark-blue": "#1D2130",

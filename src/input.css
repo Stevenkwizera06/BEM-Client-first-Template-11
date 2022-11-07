@@ -150,15 +150,15 @@
 .impressions__button{
     @apply w-36
 }
-.partners {
+.sales__partners {
     @apply flex justify-center py-10  ;
   }
 
-  .partners__logos {
+  .sales__partners-logos {
     @apply flex justify-between w-[92%];
   }
 
-  .partners__company {
+  .sales__partners-company {
     @apply w-[12vw];
   }
 
@@ -340,5 +340,163 @@
   .service-layout__paragraph {
     @apply text-[0.85rem] text-[#1D2130] font-light my-[0.5rem];
   }
+  .client__marketing{
+    @apply flex justify-between px-10 items-center
+}
+.client__marketing-description{
+  @apply basis-1/2 flex flex-col gap-5
+}
+.client__marketing-image{
+  @apply  w-2/6
+}
+.client__marketing--reversed{
+  @apply flex-row-reverse
+}
+.client{
+  @apply  p-20 space-y-20
+}
+
+.grow-business__button{
+  @apply bg-dark-blue py-3 px-5 text-white rounded-md font-bold
+}
+.grow-business{
+  @apply flex flex-col items-center justify-center relative py-20
+}
+
+.grow-business__wrapper{
+  @apply flex flex-col items-center gap-4
+}
+
+.grow-business__heading{
+  @apply w-3/5 text-center font-extrabold 
+}
+
+.features {
+  @apply max-w-[1150px] mx-auto p-4 mt-[4rem];
+}
+
+.features__heading {
+  @apply text-[2.5rem] text-[#1D2130] text-center font-bold leading-[57px] my-[1rem];
+}
+.features__wraper {
+  @apply bg-[#D798E126] px-[3rem] py-[2rem] rounded-2xl my-[3rem] flex gap-7 justify-between;
+}
+
+.features__card {
+  @apply border-r-[#CDC7D2] border-r-2;
+}
+.features__card--noborder {
+  @apply border-none;
+}
+.features__card-title {
+  @apply text-[1.8rem] text-[#1D2130] font-semibold my-[1rem];
+}
+.features__card-description {
+  @apply text-[1rem] font-light;
+}
+
+.hero-section{
+  @apply px-44 flex flex-col items-center gap-6 py-20 bg-gradient-image
+}
+.hero-section__title{
+  @apply text-center w-3/6 text-dark-blue
+}
+
+.hero-section__slogan{
+  @apply text-dark-blue opacity-[0.87] text-center w-56
+}
+
+.hero-section__container{
+  @apply flex border-2 w-56 bg-purple-200 rounded
+}
+.hero-section__button{
+  @apply bg-dark-blue py-3 px-5 text-white rounded-md font-bold
+
+}
+.hero-section__paragaraph{
+  @apply py-3 px-10
+}
 
 
+.pricing-section__card {
+  @apply flex flex-col items-center gap-6 text-center;
+
+  /* @apply w-[80%] h-full p-10  text-gray-900 ; */
+}
+.pricing-section__container {
+  @apply px-28 mx-auto;
+}
+.pricing-section__items {
+  @apply grid grid-cols-1 gap-10 pt-8 md:grid-cols-2 lg:grid-cols-3 justify-evenly;
+
+  /* @apply grid  gap-5 pt-8  grid-cols-3 ; */
+}
+.pricing-section__contents {
+  @apply w-[80%]  overflow-hidden text-center bg-white border rounded-2xl;
+}
+.pricing-section__title {
+  @apply flex justify-center w-full py-3 gap-3 border-b;
+}
+.pricing-section__header{
+  @apply mt-2 text-xl font-normal 
+}
+.pricing-section__lists {
+  @apply flex text-sm justify-center;
+}
+.pricing-section__product {
+  @apply flex w-full my-4;
+}
+.pricing-section__paragraph {
+  @apply text-center p-4;
+}
+.price-section__button {
+  @apply text-sm rounded-full  bg-dark-blue  text-white flex  justify-center items-center  w-40 h-12 mx-auto;
+}
+.pricing-section__contents--card {
+  @apply bg-platinum-background;
+}
+.pricing-section__started{
+  @apply w-full px-6 mt-2 flex flex-col gap-2
+ 
+}
+.pricing-section__started--lowe{
+  @apply pb-2
+}
+.pricing-section__header-sizing{
+  @apply text-2xl font-bold 
+  
+}
+
+.frequent-section {
+  @apply text-dark-blue ml-auto mr-auto pl-12 pr-12 pt-16 pb-16 w-full;
+}
+
+.frequent__container {
+  @apply bg-opacity-100 flex rounded-xl bg-slate-400 gap-1 p-12;
+}
+.frequent__title {
+  @apply text-5xl font-bold;
+}
+.frequent__header {
+  @apply flex flex-col gap-8  bg-opacity-100;
+}
+.frequent__subtitle {
+  @apply opacity-80 text-base font-normal;
+}
+.questions-layout {
+  @apply flex flex-col gap-6;
+}
+.questions-layout__container {
+  @apply flex flex-col justify-center gap-12 rounded-lg p-8 bg-white bg-opacity-100;
+}
+.questions__card {
+  @apply flex justify-between;
+}
+
+.questions__title {
+  @apply bg-opacity-100 text-2xl font-bold;
+}
+
+.questions__answer {
+  @apply bg-opacity-100 font-normal text-dark-blue opacity-80;
+}
