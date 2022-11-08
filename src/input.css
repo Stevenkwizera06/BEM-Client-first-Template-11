@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-/* body{
-    @apply bg-gradient-image
- }   */
+
 @layer base {
     h1 {
       @apply text-[56px] font-extrabold text-dark-blue;
@@ -31,6 +29,7 @@
   }
 
  
+
 .navigation{
     @apply flex justify-between  items-center py-3 px-10
 }
@@ -53,6 +52,9 @@
     @apply bg-dark-blue py-3 px-5 text-white rounded-md font-bold
 }
 
+
+
+
 .product-herosection__btn--contact{
     @apply py-3 px-5 border border-dark-blue rounded-md
   }
@@ -67,6 +69,9 @@
 .herosection__slogan{
     @apply text-dark-blue opacity-[0.87] text-center w-4/5
 }
+.herosection__slogan--desscription{
+  @apply w-2/4
+}
 
 .herosection__freetrials{
     @apply relative  w-1/2
@@ -80,6 +85,10 @@
     @apply absolute right-0
 
 }
+
+
+
+
 .services, .features{
     @apply flex flex-col justify-center items-center gap-8 px-10
 }
@@ -108,83 +117,89 @@
     @apply opacity-[0.87]
 }
 
+
+
+
 .work-with-us, .discover{
     @apply px-10 flex justify-between py-32 items-center
 }
 .work-with-us__description, .discover__description{
     @apply  basis-1/2
 }
-
 .work-with-us__list, .discover__list{
     @apply basis-2/5 space-y-8
 }
-
 .work-with-us__card, .discover__card{
     @apply flex gap-3 items-center basis-96
 }
-
 .work-with-us__icon{
     @apply bg-light-orange py-3 px-3 w-12 h-12 rounded-full
 }
 .discover__icon{
     @apply bg-light-gray py-3 px-3 w-12 h-12 rounded-full
 }
-
 .work-with-us__img{
     @apply w-6 
 }
+
+
+
+
 .impressions{
     @apply bg-gradient-impressions py-10
  }
 .impressions, .marketing{
     @apply flex justify-between px-10 items-center
 }
-
 .impressions__description, .marketing__description{
     @apply basis-1/2 flex flex-col gap-5
 }
-
 .impressions__image, .marketing__image{
     @apply  w-2/5
 }
 .impressions__button{
     @apply w-36
 }
+
+
+
+
 .sales__partners {
     @apply flex justify-center py-10  ;
   }
-
   .sales__partners-logos {
     @apply flex justify-between w-[92%];
   }
-
   .sales__partners-company {
     @apply w-[12vw];
   }
-
   .features{
     @apply services border-r 
   }
-
   .features__wrapper{
     @apply services__wrapper bg-dark-pur
   }
 
+
+
+
+
   .testimonials{
     @apply px-10 
   }
-
   .testimonials__wrapper{
     @apply flex justify-between gap-4
   }
-
   .testimonials__testimony{
     @apply flex flex-col gap-4 justify-center items-center basis-96 border border-bordered-blue px-10 py-10 rounded-lg
   }
-
   .testimonials__profile{
     @apply flex flex-col justify-center items-center mt-5
   }
+
+
+
+
 
   .product-herosection{
     @apply flex justify-between px-10 py-24 
@@ -202,18 +217,18 @@
   .product-herosection__img{
     @apply w-full
   }
-
   .product-services__wrapper{
     @apply flex flex-wrap justify-between pl-10 w-11/12  mt-10 py-5 bg-slate-50 rounded-tr-3xl gap-6
   }
-
   .product-services__service{
     @apply basis-80
   }
-
   .product-services__type-icon{
     @apply w-10
   }
+
+
+
 
   .marketing{
     @apply mt-10
@@ -225,18 +240,18 @@
     @apply w-5/6 
   }
 
+
+
+
   .grow-business{
     @apply flex flex-col items-center justify-center relative py-20
   }
-
   .grow-business__wrapper{
     @apply flex flex-col items-center gap-4
   }
-
   .grow-business__heading{
     @apply w-3/5 text-center font-extrabold 
   }
-
   .product-service__heading-div{
     @apply flex justify-center
   }
@@ -244,33 +259,31 @@
     @apply text-center
   }
 
+
+
+
+
   .footer{
     @apply px-10 bg-dark-blue flex flex-col gap-5
   }
-
   .footer__uppersection{
     @apply flex justify-between py-10
   }
-
   .footer__heading{
     @apply text-white font-bold
   }
-
   .footer__paragraph{
     @apply text-white opacity-60 font-medium
   }
-
   .footer__usefullinks{
     @apply flex flex-col gap-2
   }
-
   .footer__logo{
     @apply w-36
   }
   .footer__subscribe{
     @apply w-1/4 flex flex-col gap-2
   }
-
   .footer__subscribe-text{
     @apply font-semibold text-white
   }
@@ -287,7 +300,6 @@
     @apply absolute right-0 bg-white text-dark-blue py-3 px-3 font-bold
 
 }
-
 .footer__lower-section{
     @apply flex justify-between
 }
@@ -299,6 +311,10 @@
 .footer__social-icon{
     @apply opacity-50 text-white
 }
+
+
+
+
 
 
 .sales {
@@ -319,11 +335,15 @@
     @apply w-2/4
   }  
 
+
+
+
+
+
   .services-layout {
     @apply mt-10 flex flex-col items-center;
     background-image: url("./images/Blur-Gradient-product.png");
   }
-
   .service-layout__title{
     @apply text-[40px] text-[#1D2130] leading-[61px] text-center font-bold my-[2rem];
   }
@@ -340,6 +360,12 @@
   .service-layout__paragraph {
     @apply text-[0.85rem] text-[#1D2130] font-light my-[0.5rem];
   }
+
+
+
+
+
+
   .client__marketing{
     @apply flex justify-between px-10 items-center
 }
@@ -356,6 +382,10 @@
   @apply  p-20 space-y-20
 }
 
+
+
+
+
 .grow-business__button{
   @apply bg-dark-blue py-3 px-5 text-white rounded-md font-bold
 }
@@ -370,6 +400,10 @@
 .grow-business__heading{
   @apply w-3/5 text-center font-extrabold 
 }
+
+
+
+
 
 .features {
   @apply max-w-[1150px] mx-auto p-4 mt-[4rem];
@@ -395,6 +429,9 @@
   @apply text-[1rem] font-light;
 }
 
+
+
+
 .hero-section{
   @apply px-44 flex flex-col items-center gap-6 py-20 bg-gradient-image
 }
@@ -418,18 +455,17 @@
 }
 
 
+
+
+
 .pricing-section__card {
   @apply flex flex-col items-center gap-6 text-center;
-
-  /* @apply w-[80%] h-full p-10  text-gray-900 ; */
 }
 .pricing-section__container {
   @apply px-28 mx-auto;
 }
 .pricing-section__items {
   @apply grid grid-cols-1 gap-10 pt-8 md:grid-cols-2 lg:grid-cols-3 justify-evenly;
-
-  /* @apply grid  gap-5 pt-8  grid-cols-3 ; */
 }
 .pricing-section__contents {
   @apply w-[80%]  overflow-hidden text-center bg-white border rounded-2xl;
@@ -467,10 +503,12 @@
   
 }
 
+
+
+
 .frequent-section {
   @apply text-dark-blue ml-auto mr-auto pl-12 pr-12 pt-16 pb-16 w-full;
 }
-
 .frequent__container {
   @apply bg-opacity-100 flex rounded-xl bg-slate-400 gap-1 p-12;
 }
@@ -483,6 +521,10 @@
 .frequent__subtitle {
   @apply opacity-80 text-base font-normal;
 }
+
+
+
+
 .questions-layout {
   @apply flex flex-col gap-6;
 }
@@ -500,3 +542,205 @@
 .questions__answer {
   @apply bg-opacity-100 font-normal text-dark-blue opacity-80;
 }
+
+
+
+.container {
+  @apply bg-white;
+}
+.container__title {
+  @apply text-[3rem] text-center font-bold mt-[4.5rem];
+}
+.container__wrapper {
+  @apply max-w-[90vw] mx-auto p-4 bg-[#F0F2FE] my-[3rem]  px-[3rem] py-[7rem] flex items-center gap-20 rounded-xl ml-20;
+}
+.container__left {
+  @apply max-w-[580px];
+}
+
+.container__left-title {
+  @apply text-black text-[2rem] font-semibold;
+}
+
+.container__left-description {
+  @apply text-black text-[0.9rem] font-light mb-[3rem];
+}
+
+.container__form-group {
+  @apply flex gap-5;
+}
+.container__input {
+  @apply w-full py-[0.8rem] px-[0.5rem] mb-[1.1rem] rounded-md;
+}
+
+.container__button--big {
+  @apply bg-black px-[1.5rem] py-[0.2rem] rounded text-white hover:bg-white hover:text-black cursor-pointer w-[100%];
+}
+
+.container__wrapper2{
+  @apply max-w-[300px] mt-10;
+}
+.container__card {
+  @apply flex gap-5 mt-7;
+}
+.container__number {
+  @apply text-[30px];
+}
+.container__support {
+  @apply text-black  text-[0.9rem] font-light;
+}
+.container__image{
+  @apply w-10 h-10
+}
+
+.herosection__card {
+  @apply max-w-[950px] mx-auto my-[2rem] flex gap-10;
+}
+.herosection__image {
+  @apply w-[280px];
+}
+
+.herosection__about {
+  @apply max-w-[800px] mx-auto my-[3rem] p-4 px-[3rem] py-[1rem];
+}
+.herosection__about-title {
+  @apply  text-[1.2rem] text-center  font-medium ;
+}
+.herosection__about-heading {
+  @apply text-black text-[3rem] text-center  font-bold my-[1rem];
+}
+.herosection__about-description {
+  @apply text-black text-[0.9rem]  text-center font-light;
+}
+
+
+
+
+.goals {
+  @apply bg-[#F0F2FE] my-[5rem] py-[4rem];
+}
+.goals__wrapper {
+  @apply max-w-[88vw] mx-auto p-4 flex justify-between items-center;
+}
+
+.goals__content {
+  @apply max-w-[500px];
+}
+.goals__title {
+  @apply  text-[1.2rem] font-medium  bg-clip-text;
+}
+.goals__heading {
+  @apply text-black text-[2.6rem]  font-medium leading-[3.5rem] my-[1rem];
+}
+.goals__description {
+  @apply text-black text-sm font-light;
+}
+
+
+
+.corporate {
+  @apply max-w-[90vw] mx-auto p-4 mt-[5rem];
+}
+
+.corporate__description{
+  @apply flex justify-center
+}
+.corporate__heading {
+  @apply text-black text-[2.5rem] text-center font-bold leading-[3.5rem] my-[1rem];
+}
+.corporate__container {
+  @apply bg-[#F9F0FB] px-[3rem] py-[5rem] rounded-2xl my-[3rem] flex flex-wrap justify-between gap-7;
+}
+
+.corporate__card {
+  @apply max-w-[320px];
+}
+
+.corporate__card-image {
+  @apply max-w-[35px];
+}
+
+.corporate__card-title {
+  @apply text-black text-[1.4rem] font-semibold my-[1rem];
+}
+.corporate__card-description {
+  @apply text-[0.9rem] font-light;
+}
+
+
+
+
+
+.team-container {
+  @apply max-w-[90vw] mx-auto my-[4rem] p-4 flex  justify-between gap-7;
+}
+.team-container__wrapper1 {
+  @apply max-w-[350px];
+}
+.team-container__title {
+  @apply text-black text-[2.5rem] font-bold leading-[3.5rem] my-[1rem];
+}
+
+.team-container__description {
+  @apply text-black text-[0.9rem] font-light;
+}
+.team-container__container {
+  @apply flex flex-wrap gap-5;
+}
+.team-container__card {
+  @apply max-w-[220px] bg-[#E0E4FC]  rounded-xl;
+}
+.team-container__card-name {
+  @apply text-black text-[1.2rem] text-center font-bold  mt-[2rem];
+}
+.team-container__card-job {
+  @apply text-black text-[0.9rem] text-center font-light mb-[1rem];
+}
+
+
+
+.post-card{
+  @apply  border rounded-md m-10
+}
+.post-card__container{
+  @apply m-10 flex flex-row
+}
+.post-card__details{
+  @apply w-[50%] gap-6
+}
+.post-card__title{
+  @apply text-dark-blue
+}
+.post-card__description{
+  @apply text-dark-blue font-bold w-[100%] text-[3rem]
+}
+.post-card__paragraph,
+.post-card__date {
+  @apply text-[20px] mt-4 font-light;
+}
+.post-card__image{
+  @apply w-[900px] h-[500px] 
+}
+
+
+
+.posts-container__title{
+  @apply text-center
+}
+.post-container__cards{
+  @apply flex flex-row m-10
+}
+.post-container__card{
+  @apply m-2
+}
+.post-container__card-img{
+  @apply max-w-[370px]
+}
+.posts-container__header{
+  @apply text-[24px] font-medium
+}
+.posts-container__description,
+.posts-container__date{
+  @apply font-light text-[16px] mt-2
+}
+
