@@ -7,8 +7,28 @@
       "default",
       {
         "ignore": [
-          "-webkit-text-size-adjust"
+          "-webkit-text-size-adjust",
+          "@layer"
         ]
+      }
+    ],
+    "axe/structure": [
+      "default",
+      {
+        "listitem": "off",
+        "list": "off"
+      }
+    ],
+    "axe/text-alternatives": [
+      "default",
+      {
+        "document-title": "off"
+      }
+    ],
+    "axe/language": [
+      "default",
+      {
+        "html-has-lang": "off"
       }
     ]
   }
