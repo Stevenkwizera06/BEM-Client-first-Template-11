@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 @layer base {
     h1 {
@@ -340,7 +341,7 @@
 
 
 
-  .services-layout {
+  .service-layout {
     @apply mt-10 flex flex-col items-center;
     background-image: url("./images/Blur-Gradient-product.png");
   }
@@ -485,7 +486,7 @@
 .pricing-section__paragraph {
   @apply text-center p-4;
 }
-.price-section__button {
+.pricing-section__button {
   @apply text-sm rounded-full  bg-dark-blue  text-white flex  justify-center items-center  w-40 h-12 mx-auto;
 }
 .pricing-section__contents--card {
@@ -506,7 +507,7 @@
 
 
 
-.frequent-section {
+.frequent {
   @apply text-dark-blue ml-auto mr-auto pl-12 pr-12 pt-16 pb-16 w-full;
 }
 .frequent__container {
@@ -525,21 +526,21 @@
 
 
 
-.questions-layout {
+.frequent__questions {
   @apply flex flex-col gap-6;
 }
-.questions-layout__container {
+.frequent__questions-container {
   @apply flex flex-col justify-center gap-12 rounded-lg p-8 bg-white bg-opacity-100;
 }
-.questions__card {
+.frequent__questions-card {
   @apply flex justify-between;
 }
 
-.questions__title {
+.frequent__questions-title {
   @apply bg-opacity-100 text-2xl font-bold;
 }
 
-.questions__answer {
+.frequent__questions-answer {
   @apply bg-opacity-100 font-normal text-dark-blue opacity-80;
 }
 
@@ -727,13 +728,13 @@
 .posts-container__title{
   @apply text-center
 }
-.post-container__cards{
+.posts-container__cards{
   @apply flex flex-row m-10
 }
-.post-container__card{
+.posts-container__card{
   @apply m-2
 }
-.post-container__card-img{
+.posts-container__card-img{
   @apply max-w-[370px]
 }
 .posts-container__header{
